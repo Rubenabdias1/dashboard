@@ -2,11 +2,12 @@ import {
   faClipboardList,
   faDollarSign,
   faGear,
-  faHouse,
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./sidebar.module.scss";
+import { InlineIcon } from "@iconify/react";
+import roundDashboard from "@iconify/icons-ic/round-dashboard";
 
 export const SideBar = () => {
   return (
@@ -14,7 +15,7 @@ export const SideBar = () => {
       <ul>
         <li>
           <a href="">
-            <FontAwesomeIcon icon={faHouse} /> Dashboard
+            <InlineIcon icon={roundDashboard} /> Dashboard
           </a>
         </li>
         <li>
@@ -29,7 +30,7 @@ export const SideBar = () => {
         </li>
         <li>
           <a href="">
-            <FontAwesomeIcon icon={faUsers} /> Users
+            <InlineIcon icon="clarity:users-solid" /> Users
           </a>
         </li>
       </ul>
