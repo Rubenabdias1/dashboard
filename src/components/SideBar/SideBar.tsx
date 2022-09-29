@@ -1,7 +1,8 @@
 import {
+  faClipboardList,
+  faDollarSign,
   faGear,
   faHouse,
-  faList,
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -18,7 +19,12 @@ export const SideBar = () => {
         </li>
         <li>
           <a href="">
-            <FontAwesomeIcon icon={faList} /> Companies
+            <FontAwesomeIcon icon={faDollarSign} /> Sales
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <FontAwesomeIcon icon={faClipboardList} /> Inventory
           </a>
         </li>
         <li>
