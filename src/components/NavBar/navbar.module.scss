@@ -1,0 +1,34 @@
+.navbar {
+  width: 100%;
+  height: 4.375rem;
+  background-color: #333943;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  div {
+    height: 2rem;
+    button {
+      all: unset;
+      cursor: pointer;
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-left: 2rem;
+    }
+  }
+}
+.avatarButton {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  img {
+    margin-left: 1rem;
+  }
+}
