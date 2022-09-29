@@ -1,20 +1,4 @@
-html {
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-body {
-  background-color: #efefef;
-}
-
 .App {
-  font-size: 16px;
-  font-family: "Outfit";
-  font-weight: 400;
   color: #313131;
 }
 
