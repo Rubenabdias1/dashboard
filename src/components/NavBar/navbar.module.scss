@@ -6,7 +6,7 @@
   width: 100%;
   height: 4.375rem;
   background-color: #333943;
-  color: white;
+  color: #d7d7d7;
   padding: 0 2rem;
   display: flex;
   flex-flow: row wrap;
@@ -17,6 +17,9 @@
     cursor: pointer;
     font-size: 1.953125rem;
     font-weight: 500;
+    &:hover {
+      color: white;
+    }
   }
 
   div {

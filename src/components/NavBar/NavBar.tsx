@@ -7,7 +7,9 @@ import { Button } from "../Button/Button";
 export const NavBar = () => {
   return (
     <nav className={styles.navbar}>
-      <h1>Company Name</h1>
+      <a href="">
+        <h1>Company Name</h1>
+      </a>
       <div>
         <Button className={styles.navButton}>
           <FontAwesomeIcon icon={faBell} />
