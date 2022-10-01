@@ -1,7 +1,7 @@
 .homePage {
   main {
     > div {
-      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
       width: 100%;
     }
   }
@@ -16,9 +16,9 @@
 
 .column {
   &:first-child {
-    width: 39.46875rem;
+    width: 55%;
   }
   &:nth-child(2) {
-    width: 27.21875rem;
+    width: 40%;
   }
 }

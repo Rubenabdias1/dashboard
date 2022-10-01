@@ -1,0 +1,71 @@
+.button {
+  all: unset;
+  cursor: pointer;
+
+  &:active {
+    box-shadow: inset 0px 4px 1px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.sm {
+  padding: 0.5rem 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+.md {
+  padding: 0.71875rem 1rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5625rem;
+}
+
+.text {
+  &.blue {
+    color: #0d8de9;
+    &:hover {
+      color: #006cba;
+    }
+  }
+
+  &.red {
+    color: #bb2b2b;
+    &:hover {
+      color: #a32424;
+    }
+  }
+
+  &.gray {
+    color: #999999;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.contained {
+  &.blue {
+    color: white;
+    background-color: #0d8de9;
+    &:hover {
+      background-color: #006cba;
+    }
+  }
+
+  &.red {
+    color: white;
+    background-color: #bb2b2b;
+    &:hover {
+      background-color: #a32424;
+    }
+  }
+
+  &.gray {
+    background-color: #f2f2f2;
+    border: 1px solid #b0b6bf;
+    &:hover {
+      filter: brightness(85%);
+    }
+  }
+}

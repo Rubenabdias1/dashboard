@@ -4,6 +4,10 @@ import { Card } from "../../components/Card/Card";
 import { CardBody } from "../../components/Card/CardBody";
 import { CardFooter } from "../../components/Card/CardFooter";
 import { CardHeader } from "../../components/Card/CardHeader";
+import { Table } from "../../components/Table/Table";
+import { TableHeader } from "../../components/Table/TableHeader";
+import { TableBody } from "../../components/Table/TableBody";
+import { Button } from "../../components/Button/Button";
 import styles from "./home.page.module.scss";
 
 export const HomePage = () => {
@@ -36,7 +40,6 @@ export const HomePage = () => {
                   }}
                 />
               </CardBody>
-              <CardFooter>Up 72%</CardFooter>
             </Card>
           </div>
           <div className={styles.column}>
@@ -70,8 +73,8 @@ export const HomePage = () => {
             <h2>Users</h2>
           </CardHeader>
           <CardBody>
-            <table style={{ width: "100%" }}>
-              <thead>
+            <Table style={{ width: "100%" }}>
+              <TableHeader>
                 <tr>
                   <th>ID</th>
                   <th>First Name</th>
@@ -79,54 +82,44 @@ export const HomePage = () => {
                   <th>E-Mail</th>
                   <th>Session</th>
                 </tr>
-              </thead>
-              <tbody>
+              </TableHeader>
+              <TableBody>
                 <tr>
-                  <td>1</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td align="right">1</td>
+                  <td>Ruben</td>
+                  <td>Nunez</td>
+                  <td>superclubanimal@gmail.com</td>
+                  <td align="center">
+                    <Button variant="contained" color="blue" size="sm">
+                      Sign Out
+                    </Button>
+                  </td>
                 </tr>
                 <tr>
-                  <td>2</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td align="right">2</td>
+                  <td>Franklin</td>
+                  <td>Torres</td>
+                  <td>no@gmail.com</td>
+                  <td align="center">
+                    <Button variant="contained" color="red" size="sm">
+                      Sign Out
+                    </Button>
+                  </td>
                 </tr>
                 <tr>
-                  <td>3</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td align="right">3</td>
+                  <td>Angel</td>
+                  <td>Torres</td>
+                  <td>que_no_dije@gmail.com</td>
+                  <td align="center">
+                    <Button variant="contained" size="sm">
+                      Sign Out
+                    </Button>
+                  </td>
                 </tr>
-                <tr>
-                  <td>4</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr>
-                  <td colSpan={3}>Random</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tfoot>
-            </table>
+              </TableBody>
+            </Table>
           </CardBody>
-          <CardFooter>Up 72%</CardFooter>
         </Card>
       </AppWrapper>
     </div>
