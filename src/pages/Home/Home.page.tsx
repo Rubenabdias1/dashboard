@@ -9,6 +9,9 @@ import { TableHeader } from "../../components/Table/TableHeader";
 import { TableBody } from "../../components/Table/TableBody";
 import { Button } from "../../components/Button/Button";
 import styles from "./home.page.module.scss";
+import { Input } from "../../components/Input/Input";
+import { Form } from "../../components/Form/Form";
+import { Icon } from "@iconify/react";
 
 export const HomePage = () => {
   return (
@@ -76,6 +79,7 @@ export const HomePage = () => {
             <Table style={{ width: "100%" }}>
               <TableHeader>
                 <tr>
+                  <th></th>
                   <th>ID</th>
                   <th>First Name</th>
                   <th>Last Name</th>
@@ -85,40 +89,78 @@ export const HomePage = () => {
               </TableHeader>
               <TableBody>
                 <tr>
+                  <td width="1rem">
+                    <Input type="checkbox" variant="outlined" />
+                  </td>
                   <td align="right">1</td>
                   <td>Ruben</td>
                   <td>Nunez</td>
                   <td>superclubanimal@gmail.com</td>
                   <td align="center">
-                    <Button variant="contained" color="blue" size="sm">
-                      Sign Out
+                    <Button color="red" dimension="sm">
+                      <Icon icon="entypo:log-out" />
+                      &nbsp; Sign Out
                     </Button>
                   </td>
                 </tr>
                 <tr>
+                  <td width="1rem">
+                    <Input type="checkbox" variant="outlined" />
+                  </td>
                   <td align="right">2</td>
                   <td>Franklin</td>
                   <td>Torres</td>
                   <td>no@gmail.com</td>
                   <td align="center">
-                    <Button variant="contained" color="red" size="sm">
-                      Sign Out
+                    <Button color="red" dimension="sm">
+                      <Icon icon="entypo:log-out" />
+                      &nbsp; Sign Out
                     </Button>
                   </td>
                 </tr>
                 <tr>
+                  <td width="1rem">
+                    <Input type="checkbox" variant="outlined" />
+                  </td>
                   <td align="right">3</td>
                   <td>Angel</td>
                   <td>Torres</td>
                   <td>que_no_dije@gmail.com</td>
                   <td align="center">
-                    <Button variant="contained" size="sm">
-                      Sign Out
+                    <Button color="red" dimension="sm">
+                      <Icon icon="entypo:log-out" />
+                      &nbsp; Sign Out
                     </Button>
                   </td>
                 </tr>
               </TableBody>
             </Table>
+          </CardBody>
+        </Card>
+        <Card>
+          <CardHeader>
+            <h2>Company</h2>
+          </CardHeader>
+          <CardBody>
+            <Form action="">
+              <label htmlFor="name">Name</label>
+              <Input
+                type="text"
+                name="name"
+                id="name"
+                variant="outlined"
+                placeholder="Name"
+                defaultValue="The Company"
+              />
+              <label htmlFor="do">
+                <Input type="checkbox" name="do" id="do" variant="outlined" />{" "}
+                Do
+              </label>
+
+              <Button type="submit" color="blue" variant="contained">
+                Submit
+              </Button>
+            </Form>
           </CardBody>
         </Card>
       </AppWrapper>

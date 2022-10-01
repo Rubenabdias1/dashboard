@@ -1,14 +1,18 @@
 import styles from "./avatar.module.scss";
 
-type Props = {
-  src?: string | undefined;
-  alt?: string | undefined;
-};
+export type ImgTagProps = React.DetailedHTMLProps<
+  React.ImgHTMLAttributes<HTMLImageElement>,
+  HTMLImageElement
+>;
 
-export const Avatar: React.FC<Props> = ({ src = "", alt = "avatar" }) => {
+export const Avatar: React.FC<ImgTagProps> = ({
+  src = "",
+  alt = "avatar",
+  ...props
+}) => {
   return (
     <div className={styles.avatar}>
-      <img src={src} alt={alt} />
+      <img src={src} alt={alt} {...props} />
     </div>
   );
 };

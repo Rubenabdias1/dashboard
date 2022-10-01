@@ -9,11 +9,11 @@ export const NavBar = () => {
     <nav className={styles.navbar}>
       <h1>Company Name</h1>
       <div>
-        <Button>
+        <Button className={styles.navButton}>
           <FontAwesomeIcon icon={faBell} />
         </Button>
-        <Button className={styles.avatarButton}>
-          Ruben Nunez{" "}
+        <Button className={`${styles.avatarButton} ${styles.navButton}`}>
+          Ruben Nunez
           <Avatar src="https://avatars.githubusercontent.com/u/37821608?v=4" />
         </Button>
       </div>

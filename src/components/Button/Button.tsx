@@ -1,25 +1,27 @@
 import styles from "./button.module.scss";
 
-interface ButtonProps {
-  children: React.ReactNode;
-  className?: string;
+type ButtonTagProps = React.DetailedHTMLProps<
+  React.ButtonHTMLAttributes<HTMLButtonElement>,
+  HTMLButtonElement
+>;
+
+interface ButtonProps extends ButtonTagProps {
   variant?: "text" | "contained" | "outlined";
   color?: "red" | "blue" | "gray";
-  size?: "sm" | "md";
+  dimension?: "sm" | "md";
 }
 
 export const Button: React.FC<ButtonProps> = ({
-  children,
   color = "gray",
-  size = "md",
+  dimension = "md",
   variant = "text",
-  className,
+  className = "",
+  ...props
 }) => {
   return (
     <button
-      className={`${styles.button} ${styles[variant]} ${styles[color]} ${styles[size]} ${className}`}
-    >
-      {children}
-    </button>
+      className={`${styles.button} ${styles[variant]} ${styles[color]} ${styles[dimension]} ${className}`}
+      {...props}
+    />
   );
 };

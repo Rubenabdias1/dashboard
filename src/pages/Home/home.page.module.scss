@@ -16,9 +16,12 @@
 
 .column {
   &:first-child {
+    padding-left: 2rem;
     width: 55%;
   }
   &:nth-child(2) {
-    width: 43%;
+    padding-right: 2rem;
+    margin-left: 2rem;
+    width: 45%;
   }
 }
