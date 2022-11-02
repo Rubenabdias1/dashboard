@@ -21,3 +21,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+progress {
+  width: 100%;
+  height: 1rem;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
