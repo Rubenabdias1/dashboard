@@ -1,19 +1,20 @@
 import { NavBar } from "../NavBar/NavBar";
 import { SideBar } from "../SideBar/SideBar";
 import styles from "./appWrapper.module.scss";
+import { Outlet } from "react-router-dom";
 
-interface Props {
-  children: React.ReactNode;
-}
+interface Props {}
 
-export const AppWrapper: React.FC<Props> = ({ children }) => {
+export const AppWrapper: React.FC<Props> = () => {
+  console.log("rendering");
   return (
     <div>
       <NavBar />
       <div>
         <SideBar />
-        <main className={styles.main}>{children}</main>
-        <h1>Dashboard</h1>
+        <main className={styles.main}>
+          <Outlet />
+        </main>
       </div>
     </div>
   );

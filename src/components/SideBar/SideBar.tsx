@@ -3,6 +3,7 @@ import {
   faDollarSign,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 import styles from "./sidebar.module.scss";
 
 export const SideBar = () => {
@@ -10,14 +11,14 @@ export const SideBar = () => {
     <nav className={styles.sidebar}>
       <ul>
         <li>
-          <a href="/sales">
+          <Link to="/sales">
             <FontAwesomeIcon icon={faDollarSign} /> Sales
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/inventory">
+          <Link to="/inventory">
             <FontAwesomeIcon icon={faClipboardList} /> Inventory
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
