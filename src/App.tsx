@@ -4,6 +4,7 @@ import { HomePage } from "./pages/Home/Home.page";
 import { AppWrapper } from "./components/AppWrapper/AppWrapper";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { InventoryPage } from "./pages/Inventory/inventory.page";
 
 const router = createBrowserRouter([
   {
@@ -20,7 +21,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/inventory",
-        element: <h1>Hi</h1>,
+        element: <InventoryPage />,
       },
     ],
   },
